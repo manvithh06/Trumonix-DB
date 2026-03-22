@@ -49,9 +49,9 @@ docker-compose up --build
 
 ```bash
 psql -U postgres
-CREATE DATABASE trumonix_db;
-CREATE USER trumonix WITH PASSWORD 'trumonix123';
-GRANT ALL PRIVILEGES ON DATABASE trumonix_db TO trumonix;
+CREATE DATABASE xyz;
+CREATE USER trumonix WITH PASSWORD 'xyz';
+GRANT ALL PRIVILEGES ON DATABASE xyz TO xyz;
 \q
 ```
 
@@ -78,11 +78,7 @@ npm run dev
 
 ---
 
-## 🔐 Default Credentials
 
-| Role  | Username | Password   |
-|-------|----------|------------|
-| Admin | `admin`  | `Admin@123` |
 
 > The admin account is **auto-seeded** on first backend startup.
 
@@ -169,22 +165,6 @@ npm install -g @railway/cli
 railway login
 railway init
 railway up
-```
-
----
-
-## 👥 Team
-
-| Name | USN |
-|------|-----|
-| Asmith A Bangera   | NNM24AM011 |
-| Dhanya K Suvarna   | NNM24AM020 |
-| Manvith Devadiga   | NNM24AM029 |
-| Raizel Neva Dsilva | NNM24AM039 |
-
-**Course:** Database Management System, CS2102-1  
-**Institution:** NNM Institute of Technology
-
 ---
 
 ## 📄 License
