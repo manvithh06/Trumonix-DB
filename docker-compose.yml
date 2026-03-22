@@ -6,9 +6,7 @@ services:
     container_name: trumonix_db
     restart: unless-stopped
     environment:
-      POSTGRES_DB: trumonix_db
-      POSTGRES_USER: trumonix
-      POSTGRES_PASSWORD: trumonix123
+  
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
@@ -26,8 +24,6 @@ services:
     container_name: trumonix_backend
     restart: unless-stopped
     environment:
-      DATABASE_URL: postgresql://trumonix:trumonix123@db:5432/trumonix_db
-      SECRET_KEY: ${SECRET_KEY:-trumonix-production-secret-change-me}
       FRONTEND_URL: ${FRONTEND_URL:-http://localhost:5173}
       DEBUG: "false"
     ports:
