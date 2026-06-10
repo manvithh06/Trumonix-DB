@@ -142,22 +142,7 @@ Key design decisions:
 - **JSON column** for flexible risk_factors storage
 - **Immutable audit_logs** — append-only compliance trail
 
----
 
-## 🌐 Deployment (Production)
-
-### Render.com
-1. Create a **PostgreSQL** service → copy `DATABASE_URL`
-2. Create a **Web Service** for backend → set env vars, start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
-3. Create a **Static Site** for frontend → build command: `npm run build`, publish dir: `dist`
-
-### Railway
-```bash
-# Install Railway CLI
-npm install -g @railway/cli
-railway login
-railway init
-railway up
 ---
 
 ## 📄 License
