@@ -33,13 +33,6 @@ cd trumonix
 cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env
 
-# Build & launch
-docker-compose up --build
-```
-
-- **Frontend:** http://localhost:5173
-- **Backend API:** http://localhost:8000
-- **API Docs (Swagger):** http://localhost:8000/docs
 
 ---
 
